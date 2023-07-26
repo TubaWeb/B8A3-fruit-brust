@@ -39,6 +39,7 @@
 <body class="font-lato">
 
     <header>
+        <!-- navbar -->
         <nav class="max-w-screen-xl mx-auto px-8 md:px-2 lg:px-24 py-5">
             <div class="navbar lg:flex flex-row-reverse gap-10 md:gap-28 lg:gap-1 md:p-2 md:pr-10 lg:pr-6 md:flex lg:flex-row  md:bg-[#F85559] rounded-full">
                 <div>
@@ -83,18 +84,78 @@
               </div>
         </nav>
 
-        <nav>
-            <div>
-
-            </div>
-        </nav>
     </header>
 
 
-    <main>
- 
+    <main>      
+          <!-- Carousel -->
+          <section class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-5 my-10">
+            <div>
+                <div class="carousel w-full">
+                    <div id="slide1" class="carousel-item relative w-full">
+                      <img src="./images/banner1.png" class="w-full" />
+                      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle">❮</a> 
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                      </div>
+                    </div> 
+                    <div id="slide2" class="carousel-item relative w-full">
+                      <img src="./images/banner2.png" class="w-full" />
+                      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a> 
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                      </div>
+                    </div> 
+                    <div id="slide3" class="carousel-item relative w-full">
+                      <img src="./images/banner3.png" class="w-full" />
+                      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle">❮</a> 
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                      </div>
+                    </div> 
+                    <div id="slide4" class="carousel-item relative w-full">
+                      <img src="./images/banner4.png" class="w-full" />
+                      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle">❮</a> 
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </section>
 
-      
+        <!-- Deal of the day section -->
+    <section class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-5 my-10 mb-10">
+        <!-- Deal time -->
+        <div class="flex flex-col lg:flex-row  md:justify-between lg:justify-between items-center gap-5 mb-10">
+            <div class="bg-slate-400 flex-1 p-3">
+                <h3 class="text-5xl font-extrabold mb-4">Deal of the day</h3>
+                <p class="text-base font-medium">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+            </div>
+            <div class="bg-slate-600 flex-1 p-3">
+                <h3>Deal of the day</h3>
+                <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+            </div>
+        </div>
+
+        <!-- Deal card -->
+        <div class="grid grid-cols-1 md:grid-cols-2 text-center lg:grid-cols-4 gap-5">
+            <div>
+                <p class="bg-red-200">Test1</p>
+            </div>
+            <div>
+                <p class="bg-red-400">Test2</p>
+            </div>
+            <div>
+                <p class="bg-red-600">Test3</p>
+            </div>
+            <div>
+                <p class="bg-red-800">Test4</p>
+            </div>
+        </div>
+    </section>
+
+
     </main>
 
 
